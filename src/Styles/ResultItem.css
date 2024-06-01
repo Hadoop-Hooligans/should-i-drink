@@ -1,0 +1,48 @@
+.picture-inset{
+    height: 116px;
+    width: 116px;
+    position: relative;
+}
+
+.picture-inset img{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+.result-item-container{
+    background-color: var(--picton-blue-100);
+    border-radius: 12px;
+    /* outline: 1px solid var(--picton-blue-300); */
+}
+
+.result-item-container .item-content{
+    padding: 1rem;
+}
+.card-action{
+    padding: 1rem;
+}
+
+.status-token{
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--picton-blue-500);
+    font-weight: 500;
+    color: var(--picton-blue-900);
+}
+
+.safe{
+    background-color: var(--picton-blue-300);
+}
+.last-updated {
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.last-updated span {
+    background-color: var(--picton-blue-200);
+    padding: 0.75rem;
+    border-radius: 12px;
+    color: var(--picton-blue-700);
+}
+
+

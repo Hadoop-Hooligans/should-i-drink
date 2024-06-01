@@ -1,0 +1,80 @@
+.table-header {
+    position: sticky;
+}
+
+table {
+    outline: 6px solid var(--picton-blue-300);
+    /* border-left: 8px solid; */
+    /* border-right: 8px solid; */
+    /* border-bottom: 8px solid; */
+    border-radius: 1.5rem;
+    background-color: var(--picton-blue-300);
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+tr th:not(:last-child),
+tr td:not(:last-child) {
+    border-right: 1px solid var(--picton-blue-500);
+
+}
+
+.table-item:nth-child(even) {
+    background-color: var(--picton-blue-50);
+}
+
+.table-item:nth-child(odd) {
+    background-color: var(--picton-blue-100);
+}
+
+td,
+th {
+    text-align: left;
+    padding: 1rem 1.5rem;
+}
+
+.table-item td {
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid var(--picton-blue-500);
+}
+
+.table-item:last-child td {
+    border-bottom: none;
+}
+
+tr span {
+    font-variation-settings: 'FILL' 1;
+}
+
+tr:nth-child(3) td:first-child {
+    border-radius: 1.5rem 0 0 0;
+}
+
+tr:nth-child(3) td:last-child {
+    border-radius: 0 1.5rem 0 0;
+}
+
+table .table-item:hover {
+    background-color: var(--picton-blue-200);
+    cursor: pointer;
+}
+
+table .table-item.selected {
+    background-color: var(--picton-blue-950);
+    color: var(--picton-blue-50);
+}
+
+/* tr:nth-child(3) td:last-child {
+    border-radius: 0;
+} */
+
+/* .table-item:last-child td:first-child {
+    border-radius: 0;
+} */
+
+caption {
+    caption-side: bottom;
+    padding: 1rem;
+    color: var(--picton-blue-950);
+    background-color: var(--picton-blue-300);
+}

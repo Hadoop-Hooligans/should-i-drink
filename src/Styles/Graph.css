@@ -1,0 +1,163 @@
+.graphs-container>div {
+    width: 100%;
+}
+
+.graph {
+    user-select: none;
+    height: 100%;
+    background-color: var(--color-neutral-color-0);
+    /* outline: 8px solid var(--picton-blue-100); */
+    border-radius: 1rem;
+    border: 1px solid var(--color-neutral-color-4);
+    /* padding: 1rem 1.5rem; */
+    position: relative;
+    box-shadow: var(--shadow-dark-elevation-low);
+    transition: box-shadow 0.08s linear;
+}
+
+.graph:hover {
+    box-shadow: var(--shadow-dark-elevation-medium)
+}
+
+.graph-header {
+    border-bottom: 1px solid var(--color-neutral-color-3);
+}
+
+/* .graph-header {
+    top: 0;
+    height: 40px;
+    margin-bottom: 1%;
+    width: 100%;
+    left: 0;
+} */
+
+.metric-header {
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+.mt-name {
+    color: var(--picton-blue-950);
+}
+
+.time {
+    color: var(--color-neutral-color-8);
+}
+
+.cr-value {
+    color: var(--picton-blue-950);
+}
+
+.change-icon {
+    position: relative;
+    background-color: lightgreen;
+    border-radius: 50%;
+    padding: 0.25rem;
+    color: darkgreen;
+}
+
+.change-value {
+    color: darkgreen;
+}
+
+.change>p {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.change:hover .change-value {
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+.graph-container {
+    /* padding: 0 1.5rem 1.5rem 1.5rem; */
+    padding: 2rem;
+    padding-left: 0;
+    padding-top: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.graph-values {
+    width: fit-content;
+    z-index: 4;
+    /* padding: 2rem; */
+    padding-top: 0;
+}
+
+
+
+.time-switcher-wrapper {
+    background-color: var(--color-neutral-color-1);
+    border-radius: 0.75rem;
+    padding: 6px;
+    justify-self: end;
+    height: fit-content;
+    border: 1px solid var(--color-neutral-color-4);
+    /* box-shadow: inset 0 1px 1px 1px var(--color-neutral-color-2); */
+}
+
+.time-item {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--color-neutral-color-9);
+}
+
+.time-item:hover {
+    background-color: var(--color-neutral-color-4);
+    cursor: pointer;
+}
+
+.time-item.selected {
+    /* border: 1px solid var(--color-neutral-color-3); */
+    background-color: var(--color-neutral-color-0);
+    background-color: var(--picton-blue-950);
+    color: var(--picton-blue-50);
+    box-shadow: var(--shadow-dark-elevation-medium);
+    transition: box-shadow 0.08s linear;
+    font-weight: 600;
+}
+
+.time-item.selected:hover {
+    box-shadow: var(--shadow-dark-elevation-medium);
+}
+
+.custom-tooltip {
+    background-color: var(--color-neutral-color-0);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-dark-elevation-medium);
+}
+
+.custom-tooltip>p {
+    font-weight: 500;
+}
+
+.vert-divider {
+    height: 100%;
+    width: 1px;
+    background-color: var(--color-neutral-color-4);
+}
+
+.multi-var.empty {
+    height: 100%;
+    min-width: 150px;
+    border-radius: 1rem;
+    background-color: var(--color-neutral-color-2);
+}
+
+.re-row.first-selection {
+    background-color: var(--picton-blue-300);
+}
+
+.re-row.second-selection {
+    background-color: var(--color-accent-color-6);
+}
+
+.re-row.second-selection:hover {
+    background-color: var(--color-accent-color-3);
+}

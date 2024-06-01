@@ -1,0 +1,31 @@
+.jc-sb {
+    justify-content: space-between;
+}
+
+.gp-12 {
+    gap: 0.75rem;
+}
+
+.gp-16 {
+    gap: 1rem;
+
+}
+.jc-sa{
+    justify-content: space-around;
+}
+.gp-24 {
+    gap: 1.5rem;
+
+}
+
+.flx-wrp {
+    flex-wrap: wrap;
+}
+
+.al-sb {
+    align-items: space-between;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}

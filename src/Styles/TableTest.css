@@ -1,0 +1,55 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.determinant-table {
+    width: 100%;
+    min-width: 200px; /* Minimum width for the table */
+    border-spacing: 0;
+    margin-bottom: 20px;
+    outline: 1px solid #ddd; /* Add border to the table for the outer border */
+    border-radius: 1rem; /* Add border radius */
+    overflow: hidden; /* Ensure content respects border radius */
+}
+
+.determinant-table thead {
+    background-color: #002855;
+    color: white;
+}
+
+.determinant-table th,
+.determinant-table td {
+    padding: 1.5rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; /* Add vertical borders */
+}
+
+.determinant-table th:last-child,
+.determinant-table td:last-child {
+    border-right: none; /* Remove the right border from the last column */
+}
+
+.determinant-table th {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.determinant-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.determinant-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.determinant-table td .description {
+    color: #777;
+    font-size: 12px;
+}
+
+.determinant-table td .sub-value {
+    color: #777;
+    font-size: 12px;
+}

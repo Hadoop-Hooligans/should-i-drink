@@ -1,0 +1,85 @@
+/* Font Styles */
+.body-small {
+    font-size: 0.75rem;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+}
+
+.body-medium {
+    font-size: 0.875rem;
+    line-height: 19px;
+    font-weight: 400;
+
+    font-family: 'Manrope', sans-serif;
+}
+
+.body-large {
+    font-size: 1rem;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+}
+
+.title-small {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 22px;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.title-medium {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 27px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.title-large {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.headline-small {
+    font-size: 2.25rem;
+    line-height: 49px;
+    font-weight: 600;
+    font-family: Manrope;
+    color: var(--picton-blue-950);
+}
+
+.headline-medium {
+    font-size: 3rem;
+    line-height: 66px;
+    font-weight: 600;
+}
+
+.headline-large {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.headline-largest {
+    font-size: max(4.5vw, 2.5rem);
+    line-height: 1.5;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: var(--picton-blue-950);
+}
+
+.vw-headline {
+    font-size: max(4vw, 1.75rem);
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    color: var(--picton-blue-950);
+}
+
+.vw-body {
+    font-size: max(1.5vw, 0.75rem);
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+}

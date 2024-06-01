@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: var(--picton-blue-50);
+  font-family: Manrope, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --ti-cursor-color: transparent;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 2px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 4px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 6px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --picton-blue-50: #eff8ff;
+  --picton-blue-100: #dff0ff;
+  --picton-blue-200: #b8e3ff;
+  --picton-blue-300: #78ceff;
+  --picton-blue-400: #31b5ff;
+  --picton-blue-500: #069bf1;
+  --picton-blue-600: #007bce;
+  --picton-blue-700: #0062a7;
+  --picton-blue-800: #02528a;
+  --picton-blue-900: #084572;
+  --picton-blue-950: #062b4b;
+
+  /* Error Color */
+  --color-error: rgb(186 26 26);
+  --color-on-error: rgb(255 255 255);
+
+  /* Accent Color */
+  --color-accent-color-0: #FEEFF5;
+  --color-accent-color-1: #FEDDEA;
+  --color-accent-color-2: #FCC2D7;
+  --color-accent-color-3: #FAA2C1;
+  --color-accent-color-4: #F783AC;
+  --color-accent-color-5: #F06595;
+  --color-accent-color-6: #E64980;
+  --color-accent-color-7: #D6336C;
+  --color-accent-color-8: #C2255C;
+  --color-accent-color-9: #A61E4D;
+  --color-accent-color-10: #8C1941;
+  --color-accent-color-11: #731536;
+  --color-accent-color-12: #59102A;
+
+  /* Neutral Color */
+  --color-neutral-color-0: #f7f9fa;
+  --color-neutral-color-1: #f1f3f5;
+  --color-neutral-color-2: #eaecee;
+  --color-neutral-color-3: #dfe3e4;
+  --color-neutral-color-4: #d0d5d7;
+  --color-neutral-color-5: #b0b5b8;
+  --color-neutral-color-6: #969a9c;
+  --color-neutral-color-7: #7e8181;
+  --color-neutral-color-8: #666968;
+  --color-neutral-color-9: #50514f;
+  --color-neutral-color-10: #3a3a37;
+  --color-neutral-color-11: #252521;
+  --color-neutral-color-12: #121210;
+
+  /* Shadow */
+  --shadow-color: 210deg 30% 57%;
+  --shadow-elevation-low:
+    0px 0.7px 0.7px hsl(var(--shadow-color) / 0.53),
+    0px 1px 1px -1.7px hsl(var(--shadow-color) / 0.43),
+    0px 2.8px 2.7px -3.5px hsl(var(--shadow-color) / 0.33);
+  --shadow-elevation-medium:
+    0px 0.7px 0.7px hsl(var(--shadow-color) / 0.45),
+    0px 1.4px 1.4px -0.9px hsl(var(--shadow-color) / 0.39),
+    0px 3px 2.9px -1.7px hsl(var(--shadow-color) / 0.34),
+    0px 6.8px 6.6px -2.6px hsl(var(--shadow-color) / 0.29),
+    0px 13.8px 13.5px -3.5px hsl(var(--shadow-color) / 0.24);
+  --shadow-elevation-high:
+    0px 0.7px 0.7px hsl(var(--shadow-color) / 0.41),
+    0px 2.3px 2.2px -0.4px hsl(var(--shadow-color) / 0.39),
+    0px 4.2px 4.1px -0.8px hsl(var(--shadow-color) / 0.37),
+    0px 6.9px 6.7px -1.2px hsl(var(--shadow-color) / 0.34),
+    0px 10.9px 10.6px -1.6px hsl(var(--shadow-color) / 0.32),
+    0px 16.9px 16.5px -1.9px hsl(var(--shadow-color) / 0.3),
+    -0.1px 25.5px 24.9px -2.3px hsl(var(--shadow-color) / 0.27),
+    -0.1px 37.2px 36.3px -2.7px hsl(var(--shadow-color) / 0.25),
+    -0.1px 52.6px 51.3px -3.1px hsl(var(--shadow-color) / 0.22),
+    -0.2px 72.4px 70.6px -3.5px hsl(var(--shadow-color) / 0.2);
+
+
+  /* Shadow Non-Tinted */
+  --shadow-color-dark: 0deg 0% 0%;
+  --shadow-dark-elevation-low:
+    0px 0.7px 0.7px hsl(var(--shadow-color-dark) / 0.16),
+    0px 1px 1px -1.7px hsl(var(--shadow-color-dark) / 0.13),
+    0px 2.8px 2.7px -3.5px hsl(var(--shadow-color-dark) / 0.1);
+  --shadow-dark-elevation-medium:
+    0px 0.7px 0.7px hsl(var(--shadow-color-dark) / 0.13),
+    0px 1.4px 1.4px -0.9px hsl(var(--shadow-color-dark) / 0.12),
+    0px 3px 2.9px -1.7px hsl(var(--shadow-color-dark) / 0.1),
+    0px 6.8px 6.6px -2.6px hsl(var(--shadow-color-dark) / 0.09),
+    0px 13.8px 13.5px -3.5px hsl(var(--shadow-color-dark) / 0.07);
+  --shadow-dark-elevation-high:
+    0px 0.7px 0.7px hsl(var(--shadow-color-dark) / 0.12),
+    0px 2.3px 2.2px -0.4px hsl(var(--shadow-color-dark) / 0.12),
+    0px 4.2px 4.1px -0.8px hsl(var(--shadow-color-dark) / 0.11),
+    0px 6.9px 6.7px -1.2px hsl(var(--shadow-color-dark) / 0.1),
+    0px 10.9px 10.6px -1.6px hsl(var(--shadow-color-dark) / 0.1),
+    0px 16.9px 16.5px -1.9px hsl(var(--shadow-color-dark) / 0.09),
+    -0.1px 25.5px 24.9px -2.3px hsl(var(--shadow-color-dark) / 0.08),
+    -0.1px 37.2px 36.3px -2.7px hsl(var(--shadow-color-dark) / 0.07),
+    -0.1px 52.6px 51.3px -3.1px hsl(var(--shadow-color-dark) / 0.07),
+    -0.2px 72.4px 70.6px -3.5px hsl(var(--shadow-color-dark) / 0.06);
+}
+
+::selection {
+  background-color: var(--picton-blue-900);
+  color: var(--picton-blue-50);
+
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}

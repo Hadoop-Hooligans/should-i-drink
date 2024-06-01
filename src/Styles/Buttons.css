@@ -1,0 +1,39 @@
+.button {
+    border-radius: 5000px;
+    cursor: pointer;
+}
+
+.text-button {
+    height: 40px;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0 16px;
+    position: relative;
+    color: var(--picton-blue-950);
+    /* outline: 1px solid var(--picton-blue-500); */
+}
+
+.text-button::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--picton-blue-500);
+    border-radius: 9999px;
+    opacity: 0;
+}
+.tonal{
+    padding: 8px 24px 8px 16px;
+    background-color: var(--color-accent-color-3);
+    color: var(--color-accent-color-12);
+}
+.text-button:hover::before {
+    opacity: 0.2;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--picton-blue-200);
+}
+

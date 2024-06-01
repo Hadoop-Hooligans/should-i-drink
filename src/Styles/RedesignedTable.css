@@ -1,0 +1,107 @@
+caption {
+    caption-side: bottom;
+    padding: 1rem;
+    color: var(--picton-blue-950);
+    background-color: var(--picton-blue-300);
+}
+
+.re-table-header {
+    /* background-color: var(--color-neutral-color-0); */
+    background-color: var(--picton-blue-950);
+    color: var(--color-neutral-color-0);
+    /* padding: 1.5rem 1rem; */
+    border-radius: 1rem 1rem 0 0;
+    position: sticky;
+    top: 0;
+    /* box-shadow: var(--shadow-dark-elevation-low); */
+}
+
+.determinand,
+.actual-value,
+.acc-value,
+.unit {
+    padding: 1.75rem 1rem;
+    /* white-space: nowrap; */
+    /* Prevent text wrapping */
+}
+
+.determinand {
+    width: 35%;
+    min-width: 200px;
+}
+
+.actual-value,
+.acc-value {
+    width: 25%;
+    min-width: 150px;
+}
+
+.unit {
+    width: 25%;
+    min-width: 100px;
+}
+
+.re-table-header>div:not(:last-child) {
+    border-right: 1px solid var(--color-neutral-color-3);
+}
+
+.re-rows-container {
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: white;
+    /* flex: 1; */
+    height: fit-content;
+    max-height: 800px;
+    border: 1px solid var(--color-neutral-color-3);
+    box-shadow: var(--shadow-dark-elevation-low);
+}
+
+.re-rows-container>div {
+
+}
+
+.re-rows-container>div:not(:last-child):not(:first-child) {
+    border-bottom: 1px solid var(--color-neutral-color-3);
+}
+
+.re-rows-container::-webkit-scrollbar {
+    /* display: none; */
+}
+
+.re-row {
+    background-color: var(--color-neutral-color-0);
+    /* padding: 1.25rem 1rem; */
+}
+
+.re-row>div:not(:last-child) {
+    border-right: 1px solid var(--color-neutral-color-3);
+}
+
+.re-row:hover {
+    background-color: var(--picton-blue-200);
+    cursor: pointer;
+}
+
+.re-row.selected {
+    background-color: var(--picton-blue-300);
+    color: var(--picton-blue-950);
+}
+.re-row.selected>div{
+    font-weight: 600;
+}
+
+.table-container {
+    height: 100%;
+    padding: 0;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.table-container .nav {
+    background-color: var(--color-neutral-color-0);
+    box-shadow: var(--shadow-dark-elevation-low);
+}
+
+.table-container .nav.current-page {
+    background-color: var(--picton-blue-200);
+}

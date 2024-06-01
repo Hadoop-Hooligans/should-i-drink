@@ -1,0 +1,42 @@
+.loading-container {
+    border: 1px solid var(--color-neutral-color-3);
+    height: 100%;
+    background-color: var(--color-neutral-color-0);
+    box-shadow: var(--shadow-dark-elevation-low);
+    border-radius: 1rem;
+    overflow: clip;
+    position: relative;
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+        box-shadow: var(--shadow-dark-elevation-medium);
+    }
+}
+
+.loading-container::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('..\assets\dashboard-loading2.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info {
+    margin-bottom: 10vh;
+    user-select: none;
+    z-index: 2;
+    background-color: var(--color-neutral-color-0);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    /* text-transform: ; */
+    color: var(--picton-blue-950);
+    transition: box-shadow 0.3s linear;
+    /* box-shadow: var(--shadow-dark-elevation-low); */
+
+    &:hover {
+        /* box-shadow: var(--shadow-dark-elevation-medium); */
+    }
+}

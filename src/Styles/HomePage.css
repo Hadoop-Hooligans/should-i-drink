@@ -1,0 +1,326 @@
+.search-bar-div {
+    height: 80px;
+    /* outline: 2px solid var(--picton-blue-300); */
+    background-color: var(--picton-blue-50);
+    flex: 1;
+    min-width: 200px;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-elevation-medium);
+    /* box-shadow: inset 0 2px 2px 2px white ,0px 4px 4px rgba(6, 155, 241, 0.30), 0px 8px 24px 8px rgba(6, 155, 241, 0.20); */
+    transition: height 0.25s ease-in-out, opacity 1s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+}
+
+
+.body-container.home-page {
+    position: relative;
+    padding: 0 2rem;
+    min-height: 100vh;
+}
+
+.image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* background-size: clamp(60%, 100%, 60vw); */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url('..\assets\waterholding.svg');
+}
+
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(223, 240, 255);
+    background: -moz-linear-gradient(0deg, rgba(223, 240, 255, 1) 0%, rgba(223, 240, 255, 0) 30%);
+    background: -webkit-linear-gradient(0deg, rgba(223, 240, 255, 1) 0%, rgba(223, 240, 255, 0) 30%);
+    background: linear-gradient(0deg, rgba(223, 240, 255, 1) 0%, rgba(223, 240, 255, 0) 30%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dff0ff", endColorstr="#dff0ff", GradientType=1);
+    /* background-color: rgba(223, 240, 255, 0.1); */
+}
+
+.content {
+    height: fit-content;
+    z-index: 2;
+    padding: 0 2rem 2rem;
+    width: 100%;
+    /* margin-top: 400px; */
+    /* background-color: white; */
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+h1 {
+    font-size: max(5vw, 3rem);
+    /* background-color: var(--picton-blue-950); */
+    /* line-height: 1.5; */
+    word-spacing: 8px;
+    font-weight: 900;
+    color: var(--picton-blue-950);
+    text-align: center;
+}
+
+.main-heading {
+    color: var(--picton-blue-50);
+    background-color: var(--picton-blue-950);
+}
+
+/* .content {
+    margin-top: 250px;
+    z-index: 2;
+    padding: 2rem;
+    background: rgb(223,240,255);
+    background: linear-gradient(180deg, rgba(223,240,255,0) 0%, rgba(223,240,255,1) 50%);
+} */
+
+/* svg {
+    height: 100%;
+    width: 100%;
+} */
+
+/* .search-bar-div.open {
+    height: fit-content;
+} */
+
+/* .search-bar-div .search-item-container {
+    opacity: 1;
+    visibility: visible;
+    margin-top: -10px;
+}
+
+.search-bar-div.open .search-item-container {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+} */
+
+.elements {
+    width: 100%;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+}
+
+.search-item-container {
+    width: 100%;
+}
+
+.search-item {
+    height: 80px;
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+.search-item:hover {
+    background-color: var(--picton-blue-200);
+    cursor: pointer;
+}
+
+.elements:hover {
+    background-color: var(--picton-blue-200);
+}
+
+.location-icon-container {
+    height: 40px;
+    width: 40px;
+}
+
+.location-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.search-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.75rem;
+}
+
+
+.location-icon::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--picton-blue-950);
+    scale: 2;
+    opacity: 0;
+    border-radius: 50%;
+}
+
+.location-icon:hover::before {
+    opacity: 0.2;
+}
+
+.search-bar-div.open:focus-within,
+.search-bar-div:focus-within {
+    outline: 6px solid var(--picton-blue-300);
+    background-color: white !important;
+    box-shadow: var(--shadow-dark-elevation-high);
+
+}
+
+.search-bar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    width: clamp(200px, 100%, 800px);
+}
+
+.search-button-div {
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    background-color: var(--color-accent-color-6);
+    color: var(--color-neutral-color-0);
+    border-radius: 12px;
+    overflow: clip;
+    position: relative;
+    user-select: none;
+    transition: all 237ms ease-in-out;
+}
+
+.search-button-div:hover {
+    border-radius: 50%;
+}
+
+.search-bar-container input {
+    height: 80px;
+    width: 0;
+    font-size: 1.25rem;
+    padding: 1rem;
+    flex: 1;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.search-icon,
+.location-icon {
+    min-height: 24px;
+    min-width: 24px;
+    color: var(--picton-blue-900);
+}
+
+input {
+    border: none;
+    font-family: Manrope;
+    color: var(--picton-blue-950);
+}
+
+input::placeholder {
+    color: var(--picton-blue-900);
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+input[type="text"]:focus {
+    --tw-ring-color: transparent;
+}
+
+
+.search-button:hover {
+    box-shadow: 0px 4px 4px rgba(6, 155, 241, 0.20), 0px 8px 24px 8px rgba(6, 155, 241, 0.15);
+    border-radius: 50%;
+}
+
+.search-button:active {}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 342px) {
+    .search-button-div {
+        flex-grow: 1;
+        border-radius: 1rem;
+
+        &:hover {
+            border-radius: 1rem;
+        }
+    }
+
+    .hide {
+        display: block;
+    }
+
+}
+
+
+/* How it works components styles */
+
+.hiw-header {
+    text-align: center;
+}
+
+.how-it-works-container {
+    min-height: 100svh;
+    background-color: var(--picton-blue-100);
+    padding: 2rem;
+}
+
+.hiw-card-container {
+    display: grid;
+    padding: 2rem 0;
+    width: 100%;
+    /* grid-auto-flow: column; */
+    grid-gap: 2rem;
+    height: fit-content;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-auto-flow: column; */
+}
+
+.home-page-srch-results {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+
+}
+
+.home-page-srch-results.open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+/* .hiw-card-container>div {
+
+    padding: 2rem;
+    width: 300px;
+    height: 450px;
+    border-radius: 1rem;
+
+    transform: translateY(0);
+    transition: all 0.25s ease-in-out;
+    position: relative;
+} */
+
+.card {
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 1.5rem;
+    justify-content: center;
+    background-color: var(--picton-blue-50);
+    box-shadow: var(--shadow-dark-elevation-low);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-dark-elevation-medium);
+}

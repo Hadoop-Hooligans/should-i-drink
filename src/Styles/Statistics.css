@@ -1,0 +1,42 @@
+.body-container.statsPage {
+    margin-top: 90px;
+    background-color: var(--picton-blue-100);
+
+}
+
+.statsPage {
+    /* background-color: lightblue; */
+    padding: 2rem;
+    padding-top: 1rem;
+}
+
+.stats-wrapper {
+    /* width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap; */
+    width: 100%;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem; */
+    /* grid-auto-flow: column; */
+}
+
+.stats-wrapper>div {
+    /* background-color: #ddd; */
+    /* border: 1px solid #aaa; */
+    /* padding: 20px; */
+}
+
+.graphs-container {
+    min-width: 200px;
+    flex: 3;
+}
+
+/* .table-container {
+    min-width: 200px;
+    overflow: auto;
+    padding: 6px;
+    flex: 2;
+} */

@@ -1,0 +1,62 @@
+.body-container.statsPage {
+    margin-top: 90px;
+}
+
+.re-stats-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.re-stats-container>div {
+    /* border: 1px solid; */
+    min-width: 200px;
+    width: 100%;
+    /* max-width: 100%; */
+}
+
+/* .name-ribbon{
+    background-color: var(--color-neutral-color-0);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-dark-elevation-low);
+    &:hover{
+        box-shadow: var(--shadow-dark-elevation-medium);
+    }
+} */
+.re-table {
+    flex: 3;
+}
+
+.right {
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+}
+
+.right>div {
+    /* border: 1px solid; */
+}
+
+.re-stats {
+    /* flex: 2; */
+    gap: 2rem;
+}
+
+.re-graph {
+    flex: 3;
+}
+
+@media (orientation: landscape) {
+    .re-stats-container {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    .re-stats-container {
+        flex-direction: column;
+    }
+}

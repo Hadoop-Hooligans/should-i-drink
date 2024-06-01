@@ -1,0 +1,33 @@
+.fab-container {
+    position: fixed;
+    background-color: var(--color-accent-color-6);
+    z-index: 20;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-dark-elevation-medium);
+    transition: all 0.237s linear;
+    bottom: 1rem;
+    right: 1rem;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+.fab-container:hover {
+    box-shadow: var(--shadow-dark-elevation-high);
+}
+
+.fab-container.large {
+    height: 72px;
+    width: 72px;
+}
+
+.layers-icon {
+    font-variation-settings: 'FILL' 1;
+}
+
+.fab-container.open {
+    width: 200px;
+    height: 200px;
+}
