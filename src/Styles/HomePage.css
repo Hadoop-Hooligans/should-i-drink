@@ -28,7 +28,7 @@
     /* background-size: clamp(60%, 100%, 60vw); */
     background-repeat: no-repeat;
     background-position: 50%;
-    background-image: url('..\assets\waterholding.svg');
+    background-image: url('/public/assets/waterholding.svg');
 }
 
 .image-overlay {

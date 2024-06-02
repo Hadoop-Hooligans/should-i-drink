@@ -3,7 +3,6 @@ import { useContext, useEffect, useRef, useState } from 'react';
 import { Layer, Map, Marker, Popup, ScaleControl, Source } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css'
 import { ClosestWellContext, SelectedLocationContext } from './Contexts';
-import WELL from '../../public/data/wide_chch.json'
 import LayersFAB from './LayersFAB';
 import ClickAwayListener from 'react-click-away-listener';
 
@@ -26,7 +25,7 @@ function CustomMarker({ item }) {
         <>
             <Marker longitude={item.longitude} latitude={item.latitude}
             >
-                <img src="src\assets\location_pin.svg"
+                <img src="/public/assets/location_pin.svg"
                     onClick={() => setIsTooltipVisible(true)}
                 />
 
@@ -84,7 +83,7 @@ const SelectedLocationMarker = ({ selectedLocation }) => {
                 longitude={selectedLocation.longitude}
                 latitude={selectedLocation.latitude}
             >
-                <img src="src\assets\user_location.svg"
+                <img src="/public/assets/user_location.svg"
                     onClick={() => setIsTooltipVisible(true)}
                 />
                 {/* <div className={`user-loc ${isTooltipVisible ? 'visible' : ''}`}
