@@ -4,7 +4,7 @@ import '/src/index.css'
 import './Styles/FontSize.css'
 import './Styles/CommonStyles.css'
 import './Styles/Buttons.css'
-import PageBody from './Components/PageBody'
+import PageBody from './Components/templates/PageBody'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

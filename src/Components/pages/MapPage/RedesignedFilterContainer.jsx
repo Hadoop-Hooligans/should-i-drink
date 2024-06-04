@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import '../Styles/RedesignedFilterContainer.css'
-import SearchBar from './SearchBar';
-import { ClosestWellContext, SelectedLocationContext, UserLocationContext } from './Contexts';
-import WELL from '../../public/data/wide_chch.json'
+import '/src/Styles/RedesignedFilterContainer.css'
+import SearchBar from '/src/Components/atoms/SearchBar.jsx';
+import { ClosestWellContext, SelectedLocationContext, UserLocationContext } from '/src/Components/contexts/Contexts.js';
+import WELL from '../../../../public/data/wide_chch.json'
 import { map } from 'leaflet';
 import { Marker } from 'react-map-gl';
 import { useNavigate } from 'react-router-dom';
-import { WellsMetadata } from './WellMetadataContext';
+import { WellsMetadata } from '/src/Components/contexts/WellMetadataContext.jsx';
 
 Number.prototype.toRad = function () {
     return this * Math.PI / 180;
@@ -405,7 +405,6 @@ export default function RedesignedFilterContainer() {
                         :
                         null
                 }
-
             </div>
         </>
     )

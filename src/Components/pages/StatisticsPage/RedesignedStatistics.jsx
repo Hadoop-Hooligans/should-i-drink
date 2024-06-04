@@ -1,12 +1,12 @@
 import { useContext, useEffect, useState } from 'react'
-import '../Styles/RedesignedStatistics.css'
-import Graph from './Graph'
-import RedesignedTable from './RedesignedTable'
+import '/src/Styles/RedesignedStatistics.css'
+import Graph from '/src/Components/pages/StatisticsPage/Graph.jsx'
+import RedesignedTable from '/src/Components/pages/StatisticsPage/RedesignedTable.jsx'
 // import Table from './Table'
-import { AestheticCard, MetricCard, QualityCard } from './DashboardCards'
+import { AestheticCard, MetricCard, QualityCard } from '/src/Components/pages/StatisticsPage/DashboardCards.jsx'
 import { useLocation, useParams } from 'react-router-dom'
-import { SelectedLocationContext } from './Contexts'
-import LoadingMetrics from './LoadingMetrics'
+import { SelectedLocationContext } from '/src/Components/contexts/Contexts.js'
+import LoadingMetrics from '../../LoadingMetrics'
 import { list } from 'postcss'
 
 export default function RedesignedStatistics() {
@@ -28,7 +28,7 @@ export default function RedesignedStatistics() {
                 const listOfWells = []
                 Object.entries(tempData).forEach(([key, value]) => {
                     if (key !== 'sample_id' && key !== 'date_recorded' && key !== 'well_id') {
-                        listOfWells.push({ name: key, value: value, selected: false})
+                        listOfWells.push({ name: key, value: value, selected: false })
                     }
                 })
                 setWellData(listOfWells)
@@ -48,7 +48,7 @@ export default function RedesignedStatistics() {
             </div>
             <div className="re-stats-container">
                 <div className="left re-table col">
-                    <RedesignedTable wellData={wellData} setWellData={setWellData}/>
+                    <RedesignedTable wellData={wellData} setWellData={setWellData} />
                 </div>
                 <div className="right col">
                     {/* <LoadingMetrics /> */}

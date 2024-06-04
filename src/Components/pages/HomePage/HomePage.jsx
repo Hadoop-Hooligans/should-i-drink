@@ -1,9 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
-import '../Styles/HomePage.css';
+import '/src/Styles/HomePage.css';
 import '@material/web/ripple/ripple.js';
 import TypeIt from 'typeit-react';
-import { Search01Icon } from '@hugeicons/react-pro';
-import { SelectedLocationContext, UserLocationContext } from './Contexts';
+import { SelectedLocationContext, UserLocationContext } from '/src/Components/contexts/Contexts';
 import { useNavigate } from 'react-router-dom';
 
 function SearchItem({ item, handleSelectedLocation }) {

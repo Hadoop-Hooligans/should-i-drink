@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import '../Styles/NavigationTopBar.css'
+import '/src/Styles/NavigationTopBar.css';
 import { Link, NavLink } from 'react-router-dom'
-import SearchBar from './SearchBar'
+import SearchBar from '/src/Components/atoms/SearchBar.jsx'
 
 function TabItem({ item, handleActive, windowSize }) {
     return (

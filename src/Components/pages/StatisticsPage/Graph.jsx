@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
-import '../Styles/Graph.css'
+import '../../../Styles/Graph.css'
 import { Area, AreaChart, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { useLocation } from 'react-router-dom';
-import { SelectedDeterminand } from './Contexts';
-import { AcceptableDeterminands } from './AcceptableDeterminandsContext';
+import { SelectedDeterminand } from '../../contexts/Contexts';
+import { AcceptableDeterminands } from '../../contexts/AcceptableDeterminandsContext';
 
 // import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts'
 

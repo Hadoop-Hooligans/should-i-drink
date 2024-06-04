@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../Styles/DashboardCards.css'
+import '../../../Styles/DashboardCards.css'
 
 export function MetricCard(props) {
     const [isCardOpen, setIsCardOpen] = useState(false)

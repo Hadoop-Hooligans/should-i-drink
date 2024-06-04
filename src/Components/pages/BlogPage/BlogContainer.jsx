@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import '../Styles/BlogContainer.css'
-import SearchBar from './SearchBar'
+// import '../../../Styles/BlogContainer.css'
+import '/src/Styles/BlogContainer.css';
+import SearchBar from '/src/Components/atoms/SearchBar.jsx'
 import { data } from 'autoprefixer'
 
 function SegmentedItem({ item, handleActiveSegmentedItem }) {

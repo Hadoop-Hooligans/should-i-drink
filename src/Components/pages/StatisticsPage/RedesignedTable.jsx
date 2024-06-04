@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
-import '../Styles/RedesignedTable.css'
-import { SelectedDeterminand } from './Contexts'
-import { AcceptableDeterminands } from './AcceptableDeterminandsContext'
+import '../../../Styles/RedesignedTable.css'
+import { SelectedDeterminand } from '../../contexts/Contexts'
+import { AcceptableDeterminands } from '../../contexts/AcceptableDeterminandsContext'
 
 function TableItem(props) {
     const currentItem = props.acceptableValues.find(item => item.name === props.item.name)
@@ -18,7 +18,7 @@ function TableItem(props) {
                         :
                         currentItem.value.determinand_ideal_value}
                 </div>
-                <div className="title-small unit">{props.item.value.determinand_units=='nan' ? '-' : props.item.value.determinand_units}</div>
+                <div className="title-small unit">{props.item.value.determinand_units == 'nan' ? '-' : props.item.value.determinand_units}</div>
             </div>
         </>
     )

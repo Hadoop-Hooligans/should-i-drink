@@ -1,9 +1,9 @@
 import mapboxgl from 'mapbox-gl';
 import { useContext, useEffect, useRef, useState } from 'react';
-import { Layer, Map, Marker, Popup, ScaleControl, Source } from 'react-map-gl';
+import { FullscreenControl, GeolocateControl, Layer, Map, Marker, NavigationControl, Popup, ScaleControl, Source } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css'
-import { ClosestWellContext, SelectedLocationContext } from './Contexts';
-import LayersFAB from './LayersFAB';
+import { ClosestWellContext, SelectedLocationContext } from '/src/Components/contexts/Contexts';
+import LayersFAB from '/src/Components/atoms/LayersFAB.jsx';
 import ClickAwayListener from 'react-click-away-listener';
 
 
@@ -158,7 +158,7 @@ export default function MapElement() {
     const [isLayersVisible, setIsLayersVisible] = useState(false);
     return (
         <div className="map-container">
-            <Map
+            <Map reuseMaps
                 mapboxAccessToken='pk.eyJ1IjoibnJhc3RvZ2kiLCJhIjoiY2xweHRkbHU4MGRnZTJpc3Vkd2g5Znp2ZSJ9.DXCXHf-XnGSGVhvjz0mpNg'
                 initialViewState={{
                     longitude: -142,
@@ -234,6 +234,7 @@ export default function MapElement() {
 
                     ))
                 }
+
             </Map>
             <LayersFAB setIsLayersVisible={setIsLayersVisible} isLayersVisible={isLayersVisible} />
         </div>

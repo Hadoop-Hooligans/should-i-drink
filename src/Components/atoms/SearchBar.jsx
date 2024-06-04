@@ -1,4 +1,5 @@
-import '../Styles/SearchBar.css'
+// import '../../Styles/SearchBar.css'
+import '/src/Styles/SearchBar.css';
 import { forwardRef } from 'react'
 
 const SearchBar = forwardRef(function SearchBar(props, ref) {
