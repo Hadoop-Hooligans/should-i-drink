@@ -24,7 +24,7 @@ function CustomMarker({ item }) {
         <>
             <Marker longitude={item.longitude} latitude={item.latitude}
             >
-                <img src="/public/assets/location_pin.svg"
+                <img src="/assets/location_pin.svg"
                     onClick={() => setIsTooltipVisible(true)}
                 />
 
@@ -82,7 +82,7 @@ const SelectedLocationMarker = ({ selectedLocation }) => {
                 longitude={selectedLocation.longitude}
                 latitude={selectedLocation.latitude}
             >
-                <img src="/public/assets/user_location.svg"
+                <img src="/assets/user_location.svg"
                     onClick={() => setIsTooltipVisible(true)}
                 />
                 {/* <div className={`user-loc ${isTooltipVisible ? 'visible' : ''}`}
