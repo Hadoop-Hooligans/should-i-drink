@@ -158,7 +158,7 @@ export default function MapElement() {
     return (
         <div className="map-container">
             <Map
-                mapboxAccessToken={process.env.MAP_ACCESS_TOKEN}
+                mapboxAccessToken='pk.eyJ1IjoibnJhc3RvZ2kiLCJhIjoiY2xweHRkbHU4MGRnZTJpc3Vkd2g5Znp2ZSJ9.DXCXHf-XnGSGVhvjz0mpNg'
                 initialViewState={{
                     longitude: -142,
                     latitude: 32,
