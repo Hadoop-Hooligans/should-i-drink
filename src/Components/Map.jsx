@@ -6,7 +6,6 @@ import { ClosestWellContext, SelectedLocationContext } from './Contexts';
 import LayersFAB from './LayersFAB';
 import ClickAwayListener from 'react-click-away-listener';
 
-
 // export default function MapElement() {
 //     const mapContainer = useRef(null);
 //     var map = new Microsoft.Maps.Map(mapContainer.current)
@@ -159,7 +158,7 @@ export default function MapElement() {
     return (
         <div className="map-container">
             <Map
-                mapboxAccessToken='pk.eyJ1IjoibnJhc3RvZ2kiLCJhIjoiY2xweHRkbHU4MGRnZTJpc3Vkd2g5Znp2ZSJ9.DXCXHf-XnGSGVhvjz0mpNg'
+                mapboxAccessToken={process.env.MAP_ACCESS_TOKEN}
                 initialViewState={{
                     longitude: -142,
                     latitude: 32,
@@ -241,7 +240,7 @@ export default function MapElement() {
 }
 
 // export default function Map(props) {
-//     mapboxgl.accessToken = 'pk.eyJ1IjoibnJhc3RvZ2kiLCJhIjoiY2xweHRkbHU4MGRnZTJpc3Vkd2g5Znp2ZSJ9.DXCXHf-XnGSGVhvjz0mpNg'
+//     mapboxgl.accessToken = ''
 //     const mapContainer = useRef(null);
 //     const map = useRef(null);
 //     const [lng, setLng] = useState(146.359);
