@@ -1,6 +1,6 @@
 import mapboxgl from 'mapbox-gl';
 import { useContext, useEffect, useRef, useState } from 'react';
-import { Layer, Map, Marker, Popup, ScaleControl, Source } from 'react-map-gl';
+import { Layer, Map, Marker, Popup, Source } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css'
 import { ClosestWellContext, SelectedLocationContext } from './Contexts';
 import LayersFAB from './LayersFAB';
@@ -132,10 +132,12 @@ export default function MapElement() {
     const [selectedLocation, setSelectedLocation] = useContext(SelectedLocationContext)
     const [isSelectedLocation, setIsSelectedLocation] = useState(false)
     const bounds = [
-        [172.5156, -43.7725], // Southwest coordinates (longitude, latitude)
-        [172.8259, -43.4503] // Northeast coordinates (longitude, latitude)
+        [171.6339, -44.0442], // Southwest coordinates (longitude, latitude)
+        [173.7900, -43.1591] // Northeast coordinates (longitude, latitude)
     ];
     const [closestWells, setClosestWells] = useContext(ClosestWellContext)
+
+
     useEffect(() => {
         selectedLocation.latitude && selectedLocation.longitude && setIsSelectedLocation(true)
     }, [selectedLocation])
@@ -162,7 +164,7 @@ export default function MapElement() {
                 initialViewState={{
                     longitude: -142,
                     latitude: 32,
-                    zoom: 5.01
+                    zoom: 3
                 }}
                 interactiveLayerIds={['wide_chch_circle']}
                 onClick={_onClick}
@@ -191,9 +193,6 @@ export default function MapElement() {
                             You are here
                         </Popup>)
                 } */}
-                {
-
-                }
                 {
                     isLayersVisible &&
                     (

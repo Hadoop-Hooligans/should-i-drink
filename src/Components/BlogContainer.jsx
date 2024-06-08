@@ -2,6 +2,7 @@ import { useState } from 'react'
 import '../Styles/BlogContainer.css'
 import SearchBar from './SearchBar'
 import { data } from 'autoprefixer'
+import CustomModal from './Modal'
 
 function SegmentedItem({ item, handleActiveSegmentedItem }) {
     return (
@@ -101,6 +102,7 @@ export default function BlogContainer() {
     ])
     return (
         <div className="body-container blog-container-main col">
+            {/* <CustomModal /> */}
             <div className="blogs-wrapper col gp-24">
                 <div className="blog-header row al-ctr jc-sb">
                     <div className="col">
