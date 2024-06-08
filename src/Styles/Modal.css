@@ -1,0 +1,46 @@
+dialog {
+    position: absolute;
+    padding: 1.5rem;
+    min-width: 280px;
+    max-width: 320px;
+    border-radius: 1.75rem;
+    /* background-color: var(--color-primary-50); */
+    box-shadow: var(--shadow-dark-elevation-high);
+    user-select: none;
+    gap: 1.5rem;
+}
+
+dialog[open] {
+    margin: auto;
+}
+
+dialog[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+span.modal-warning-icon {
+    font-size: 2rem;
+}
+
+button {
+    z-index: 6500;
+}
+
+.model-footer {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.button.fw {
+    position: relative;
+    padding: 1rem;
+    border-radius: 8px;
+    /* width: 100%; */
+    font-weight: 500;
+}
+
+.button.fw.go-map {
+    background-color: var(--picton-blue-200);
+    flex: 1;
+}
